@@ -1,0 +1,17 @@
+<div id="text-center" style="align-self: center;">
+Hospital System Logo
+</div>
+
+<div>
+    <button type="button" (click)="goHome()" >Home</button> 
+    <!-- <a [routerLink]="['/Home']">Home</a> -->
+</div>
+<div>
+    <button type="button" (click)="goPatient()" >Patient</button> 
+    <!-- <a [routerLink]="['/Patient/Add']">Patient</a> -->
+</div>
+<div>
+    <router-outlet name="outlet_master">
+
+    </router-outlet>
+</div>

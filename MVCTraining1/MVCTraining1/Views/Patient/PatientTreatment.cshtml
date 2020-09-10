@@ -1,0 +1,51 @@
+﻿@model PatientAdmitViewModel;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>PatientTreatment</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="Index.cshtml">ASP.NET Core Hospital System</a>.</p>
+    </div>
+
+    <div class="container">
+        <br />
+        <p>Enter The Treatment For Concerning Problem Here</p>
+        <form class="form-inline" method="post" action="AddTreatment">
+            <div class="form-group">
+                <label for="name">Treatment Name:</label>
+                <input type="text" class="form-control" id="treatment" placeholder="Enter the treatment name" name="txttreatmentname" value="" />
+            </div>
+            <div class="form-group">
+                <label for="name">Treatment Duration (Dose):</label>
+                <input type="text" class="form-control" id="treatment" placeholder="Enter the treatment duration" name="txttreatmentdose" value="" />
+            </div>
+            <button type="submit" class="btn btn-default" value="" name="add">Add Treatment</button>
+        </form>
+    </div>
+    <br />
+    <div class="container">
+        <form class="form-inline" method="post" action="NewProblem">
+            <button type="submit" class="btn btn-default" value="" name="submit">Add Another Problem</button>
+        </form>
+    </div>
+
+</body>
+</html>
